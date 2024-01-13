@@ -1,0 +1,159 @@
+@font-face {
+    font-family: "Valorant";
+    src: url("valo.ttf")format("truetype");
+}
+
+*{
+    box-sizing: border-box ;
+    margin : 0;
+    padding : 0;
+    font-family:"Valorant", sans-serif;
+}
+
+header{
+    display : flex;
+    justify-content: space-between;
+    align-items:center;
+    background-color: rgb(14,25,33);
+    padding : 20px 5%;
+}
+
+
+img{
+    width: 50px;
+    height : 50px;
+}
+
+h1{
+    margin-right: auto;
+    padding : 10px 10px 10px 10px;
+}
+
+
+li,a,h1{
+    font-weight: 500;
+    font-size: 16px;
+    color : white;
+    text-decoration: none;
+}
+
+
+.logo{
+    cursor : pointer ;
+}
+.navi {
+    list-style: none;
+}
+.navi li{
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.navi li a{
+    transition : all 0.3s ease 0s;
+}
+
+.navi li a:hover{
+    color : #ff4666;
+}
+
+body{
+    background-image: url("background.jpg");
+    background-position: 50% -20%;
+}
+
+main{
+    padding-top: 200px;
+    display : flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main h1{
+    margin-right: auto;
+    margin-left: auto;
+    font-weight: 550;
+    font-size: 150px;
+}
+
+button{
+    display : flex;
+    justify-content: center;
+    align-items: center;
+    margin : auto;
+    position : relative;
+    cursor: pointer;
+    background-color:#1f2326;
+}
+
+button::after {
+    content : '';
+    position : absolute;
+    left: -11px;
+    top: -10px;
+    width: calc(100% + 20px);
+    height : calc(50% + 5px);
+    border-top : 1px solid rgba(255,255,255,0.5);
+    border-left : 1px solid rgba(255,255,255,0.5);
+    border-right : 1px solid rgba(255,255,255,0.5);
+}
+
+button::before {
+    content : '';
+    position : absolute;
+    left: -11px;
+    bottom: -10px;
+    width: calc(100% + 20px);
+    height : calc(50% + 5px);
+    border-bottom : 1px solid rgba(255,255,255,0.5);
+    border-left : 1px solid rgba(255,255,255,0.5);
+    border-right : 1px solid rgba(255,255,255,0.5);
+}
+
+button div{
+    position : relative;
+    display : inline-block;
+    overflow : hidden;
+    width : auto;
+    height : auto;
+    padding : 15px 0;
+    background-color: #ff4666;
+}
+
+button div::after{
+    content : '';
+    position : absolute;
+    right : 0;
+    bottom : 0;
+    width : 5px;
+    height: 5px;
+    background-color: #1f2326;
+    transition : 1s;
+}
+button:hover div::after{
+    background-color: white;
+}
+
+button div span{
+    position : absolute;
+    width : 120%;
+    height :110%;
+    transform: translate(-100%,-20px);
+    background-color:#1f2326;
+    clip-path: polygon(5% 0, 100% 0 , 95% 100%,0% 100%);
+    transition: 1s
+}
+
+button:hover div span{
+    transform: translate(-10%,-20px);
+}
+button div a {
+    position : relative;
+    text-decoration: none;
+    color : white;
+    font-family: "Valorant", sans-serif;
+    text-transform: uppercase;
+    font-size : 20px;
+    font-weight: bold;
+    padding : 40px 80px 20px;
+}
