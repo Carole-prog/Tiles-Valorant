@@ -1,6 +1,6 @@
 @font-face {
     font-family: "Valorant";
-    src: url("valo.ttf")format("truetype");
+    src: url("font/valo.ttf")format("truetype");
 }
 
 *{
@@ -58,7 +58,7 @@ li,a,h1{
 }
 
 body{
-    background-image: url("background.jpg");
+    background-image: url("asset/background.jpg");
     background-position: 50% -20%;
 }
 
